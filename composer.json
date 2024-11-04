@@ -1,0 +1,28 @@
+{
+    "name": "empaphy/polyphill-bcmath",
+    "description": "A metapackage that installs a bcmath polyfill if needed, and removes it if redundant.",
+    "type": "metapackage",
+    "keywords": ["bcmath", "compatibility", "portable", "polyfill", "shim"],
+    "homepage": "https://polyphill.empaphy.org/",
+    "license": "MIT",
+    "authors": [
+        { "name": "Alwin Garside", "email": "alwin@garsi.de",  "homepage": "https://yogarine.net" }
+    ],
+    "support": {
+        "issues": "https://github.com/empaphy/polyphill-bcmath/issues",
+        "forum": "https://github.com/empaphy/polyphill/discussions",
+        "wiki": "https://github.com/empaphy/polyphill/wiki",
+        "source": "https://github.com/empaphy/polyphill-bcmath",
+        "docs": "https://polyphill.empaphy.org/",
+        "rss": "https://github.com/empaphy/polyphill-bcmath/releases.atom"
+    },
+    "require": {
+        "phpseclib/bcmath_compat": ">=1"
+    },
+    "require-dev": {
+        "roave/security-advisories": "dev-latest"
+    },
+    "provide": {
+        "phpseclib/bcmath_compat": "*"
+    }
+}
